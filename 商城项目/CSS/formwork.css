@@ -1,0 +1,247 @@
+/* 详情样式表 */
+/* 顶部导航 */
+/* 顶部边框 */
+#header {
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* 顶部导航背景 */
+#header .top {
+    line-height: 40px;
+    background-color: #000;
+}
+
+/* 头部 */
+.bottom {
+    height: 115px;
+}
+
+/* 顶部logo */
+ .bottom .logo {
+    width: 169px;
+    height: 88px;
+    top: 13px;
+    left: 30px;
+}
+
+/* 搜索框+购物车外边距 */
+.bottom .search {
+    margin: 23px 0;
+}
+
+/* 搜索框外边距 */
+.bottom .search form {
+    margin-right: 30px;
+}
+
+/* 搜索输入框设置 */
+.bottom .search form input {
+    width: 475px;
+    height: 35px;
+    padding-left: 15px;
+    border: 2px solid #feb80f;
+    outline: none;
+}
+
+/* 搜索框图片 */
+.bottom .search form a {
+    width: 60px;
+    height: 38px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-color: #feb80f;
+    background-size: 26px 26px;
+    background-position: 18px 4px;
+    right: 0;
+    top: 0;
+}
+/* 搜索框提示文字设置 */
+.bottom .search input::placeholder {
+    letter-spacing: 1px;
+    color: #d9d9d9;
+    font-weight: bold;
+}
+
+/* 购物车设置 */
+.bottom .search button {
+    width: 130px;
+    height: 35px;
+    margin-right: 17px;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    outline: 0;
+    cursor: pointer;
+}
+
+.bottom button:last-child {
+    color: #e4e4e4;
+}
+
+/* 购物车图片 */
+.bottom button img {
+    width: 22px;
+    height: 20px;
+}
+
+.bottom button span {
+    width: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    font-weight: lighter;
+    background-color: #ff9c00;
+    text-align: center;
+    border-radius: 7px;
+}
+
+/* 头部导航事项 */
+#header .nav a {
+    margin-right: 28px;
+    color: #9f9f9f;
+}
+
+#header .nav a:hover {
+    color: #ff9c00;
+    text-decoration: none;
+}
+
+
+
+/*页脚服务  */
+.footer-service{
+    height: 291px;
+    background-color: #fff;
+    padding: 50px 0;
+}
+/* 上部图标 */
+.footer-service .top{
+    padding: 0 35px;
+}
+.footer-service .top span:first-child{
+    font-size: 20px;
+    color: #333333;
+}
+.footer-service .top span:last-child{
+    color: #333333;
+    color: #9f9f9f;
+}
+.footer-service .top>div{
+    width: 238px;
+    height: 66px;
+    padding:0 20px;
+    border-right: 1px solid #dadada;
+}
+.footer-service .top>div:last-child{
+    border: none;
+}
+.footer-service .top .about{
+    flex-direction: column;
+    justify-content: space-around;
+    padding:10px;
+}
+/* 下部自定义列表 */
+.footer-service .bottom{
+    height: 170px;
+    justify-content: space-around;
+    padding-top:30px;
+    margin-top: 30px;
+    border-top:2px solid #dadada;
+}
+.footer-service dt{
+    font-size: 18px;
+    line-height: 28px;
+}
+.footer-service dd{
+    font-size: 17px;
+    color: #808080;
+    line-height: 28px;
+}
+/* 二维码 */
+.footer-service .bottom .code{
+    width: 90px;
+}
+.footer-service .bottom .code img{
+    margin-top:14px;
+}
+
+/* 页脚项目 */
+.footer-items .container{
+    flex-direction: column;
+    height: 116px;
+}
+.footer-items p{
+    text-align: center;
+    margin:13px auto;
+    width: 870px;
+    color: #808080;
+    letter-spacing: 1px;
+    height: 38px;
+    line-height: 24px;
+}
+.footer-items .container div{
+    width: 565px;
+    margin: 0 auto;
+}
+
+/* 返回菜单 */
+#back{
+    width: 35px;
+    height: 235px;
+    flex-direction: column;
+    position: fixed;
+    left:60px;
+    top:130px;
+    display: none;
+}
+#back a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border:1px solid transparent;
+}
+#back a:hover{
+    border:1px solid #ccc;
+}
+#back a img{
+    margin: 6px;
+}
+
+/* 侧边二维码 */
+#twocode{
+    width: 150px;
+    height: 207px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    position: fixed;
+    right:0px;
+    top:130px;
+    display: none;
+}
+#twocode span img{
+    width: 123px;
+    height: 123px;
+}
+#twocode div img{
+    width: 24px;
+    height: 22px;
+    vertical-align: text-bottom;
+}
+#twocode p{
+    color: #333333;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+#twocode div{
+    color: #808080;
+    border-top:1px dashed #ccc;
+    padding: 5px 10px;
+}
+
+/* 固定头部 */
+#fixedtop{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}

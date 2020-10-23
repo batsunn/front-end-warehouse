@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* 头像 */
+.head {
+    height: 114px;
+    align-items: center;
+}
+
+.head .myself {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.head img {
+    width: 60px;
+    height: 60px;
+}
+
+.head p {
+    margin: 5px 0;
+}
+
+/* 功能 */
+.order {
+    height: 76px;
+    margin-top: 10px;
+}
+
+.order li {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+}
+
+.order li span {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+/* 列表 */
+.list {
+    height: 250px;
+    margin-top: 20px;
+}
+
+.list li {
+    width: 95%;
+    height: 25%;
+    margin: 0 auto;
+    border: 1px solid #F6F6F6;
+    align-items: center;
+}
+
+.list li i {
+    font-size: 26px;
+    margin-right:10px;
+}
+
+.list li div {
+    margin-left: 10px;
+}
+
+.list li>span {
+    margin-right: 10px;
+    color: #ccc;
+}
+/* 尾部 */
+/* 尾部 */
+footer{
+    justify-content: space-around;
+    color:#666666;
+    align-items: center;
+}
+footer div{
+    text-align: center;
+}
+footer p{
+    margin-top: 5px;
+}

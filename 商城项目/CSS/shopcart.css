@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+#cart .content {
+    height: 1240px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+#cart .toping {
+    width: 1150px;
+    padding: 0 15px;
+    line-height: 50px;
+    margin: 0 auto;
+    border-bottom: 3px solid #ccc;
+}
+
+#cart .toping span {
+    color: #f00;
+}
+
+#cart .toping button {
+    color: #fff;
+    background-color: #ff9c00;
+    border: 0;
+    width: 75px;
+    height: 20px;
+    margin-left: 20px;
+    outline: 0;
+}
+
+/* 购物车表单 */
+/* 购物车 */
+#shopCar {
+    margin: 0 auto;
+    width: 1140px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+#shopCar b {
+    color: #f00;
+    font-size: 18px;
+}
+#shopCar .price b:last-child{
+    font-size: 12px;
+}
+#shopCar tr th button {
+    background-color: #f00;
+    width: 68px;
+    height: 22px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+#shopCar .new{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ff9c00;
+    color: #fff;
+    text-align: center;
+}
+#shopCar .mail{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #00ae39;
+}
+#shopCar tr:nth-child(2) span:first-child {
+    background-color: #00f;
+    color: #fff;
+}
+#shopCar tr td:last-child{
+    line-height: 25px;
+}
+#shopCar tr:nth-child(2) span:last-child {
+    color: #f00;
+    font-weight: bold;
+}
+
+#shopCar tr td,
+#shopCar tr th {
+    padding: 25px;
+}
+
+#shopCar tr:nth-child(2) td,
+#shopCar tr th {
+    padding: 10px 0;
+}
+
+#shopCar tr:nth-child(2) {
+    border-bottom: 2px solid #d9d9d9;
+}
+#shopCar img {
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+#shopCar tr td:nth-child(3),
+#shopCar tr td:nth-child(4),
+#shopCar tr td:last-child {
+    vertical-align: top;
+}
+
+#shopCar tr td:nth-child(5) {
+    text-align: center;
+}
+
+#shopCar tr td:last-child {
+    text-align: right;
+}
+
+.addNum,
+.reNum,
+.num {
+    display: inline-block;
+    width: 26px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.addNum,
+.reNum {
+    cursor: pointer;
+    user-select: none;
+}
+
+.num {
+    width: 50px;
+    outline: none;
+}
+/* 猜你喜欢 */
+#cart .guess{
+    width: 1150px; 
+    margin:0 auto;
+    margin-top: 20px;
+    color: #333333;
+}
+#cart .guess>p{
+    line-height: 30px;
+    border-bottom:1px solid #d9d9d9;
+}
+#cart .guess .flexb div{
+    width: 175px;
+    padding-top: 25px;
+}
+#cart .guess .flexb p{
+    line-height: 30px;
+}
+#cart .guess img{
+    margin-bottom: 14px;
+}

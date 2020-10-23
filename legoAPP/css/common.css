@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+header {
+    height: 44px;
+}
+
+footer {
+    height: 48px;
+}
+
+main {
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+a {
+    color: #8b8b8b;
+    text-decoration: none;
+}
+
+/* 版心 */
+.w96 {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* 布局 */
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexb {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 背景 */
+.bge4 {
+    background-color: #e43130;
+}
+
+.bgfff {
+    background-color: #fff;
+}
+
+/* 字体大小 */
+.f20 {
+    font-size: 20px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+/*字体颜色 */
+.cfff {
+    color: #fff;
+}
+
+.ce4 {
+    color: #e43130;
+    ;
+}
+
+/* 字体样式 */
+.bold {
+    font-weight: bold;
+}
+
+/* 定位 */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../lib/iconfont/iconfont.eot');
+    src: url('../lib/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../lib/iconfont/iconfont.woff') format('woff'),
+        url('../lib/iconfont/iconfont.ttf') format('truetype'),
+        url('../lib/iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
