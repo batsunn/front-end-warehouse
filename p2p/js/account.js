@@ -70,9 +70,9 @@ $(function () {
                 radius: '55%',
                 center: ['50%', '40%'],
                 data: [
-                    { value: totalmoney.innerText, name: '可用金额' },
-                    { value: usablemoney.innerText, name: '冻结金额' },
-                    { value: blockedmoney.innerText, name: '总金额' },
+                    { value: usablemoney.innerText, name: '可用金额' },
+                    { value: blockedmoney.innerText, name: '冻结金额' },
+                    { value: totalmoney.innerText, name: '总金额' },
                 ],
                 emphasis: {
                     itemStyle: {
