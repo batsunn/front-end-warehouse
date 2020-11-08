@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+/* 尾部 */
+footer {
+    justify-content: space-around;
+    color: #666666;
+    align-items: center;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer p {
+    margin-top: 5px;
+}
