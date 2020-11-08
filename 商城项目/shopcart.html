@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐购商城-购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="description"
+        content="乐购legou.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,乐购" />
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <!-- 引入公用样式表 -->
+    <link rel="stylesheet" href="./CSS/common.css">
+    <!-- 引入模板页面样式表 -->
+    <link rel="stylesheet" href="./CSS/formwork.css">
+    <!-- 引入当前页面样式表 -->
+    <link rel="stylesheet" href="./CSS/shopcart.css">
+
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div id="header">
+        <!-- 顶部导航 -->
+        <div class="top cf f14 fff">
+            <div class="container">
+                <div class="fl">乐购www.legou.com</div>
+                <div class="fr">欢迎光临乐购&emsp;请 <a href="./login.html" target="_blank" class="f90"> 登录 |</a> <a href="./register.html" target="_blank"
+                        class="f90"> 注册</a></div>
+            </div>
+        </div>
+
+        <!-- 头部 -->
+        <div class="bottom bfff">
+            <div class="container cf">
+                <!-- logo -->
+                <img src="./img/logo.png" class="fl logo relative" alt="">
+                <div class="fr">
+                    <!-- 搜索框+购物车 -->
+                    <div class="search cf f14">
+                        <!-- 搜索框 -->
+                        <form class="fl relative">
+                            <input name="" id="" placeholder="请输入搜索的商品名">
+                            <a href="" class="absolute"></a>
+                        </form>
+                        <!-- 购物车 -->
+                        <div class="fl bold">
+                            <button type="button" class="f90 bfff relative lsp"><img
+                                    src="./img/shopcart.png" />&nbsp;购物车<span class="fff inblock">0</span></button>
+                            <button type="button" class="bfff" disabled>我的订单</button>
+                        </div>
+                    </div>
+                    <!-- 头部项目 -->
+                    <div class="nav f16 bold">
+                        <a href="" class="f90">图书</a>
+                        <a href="">电子书</a>
+                        <a href="">原创文学</a>
+                        <a href="">服装</a>
+                        <a href="">运动户外</a>
+                        <a href="">孕婴童</a>
+                        <a href="">家居</a>
+                        <a href="">创意文具</a>
+                        <a href="">地方特产</a>
+                        <a href="">海外购</a>
+                        <a href="">电器城</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 购物车 -->
+    <div id="cart">
+        <div class="container">
+            <div class="content bfff">
+                <div class="toping f18 flexb">
+                    <div>
+                        全部商品<span class="bold">&nbsp;3</span>&emsp;
+                        活动商品<span class="bold">&nbsp;0</span>&emsp;
+                        库存紧张<span class="bold">&nbsp;0</span>
+                    </div>
+                    <div class="f12">
+                        <b>温馨提示:</b> 亲爱的顾客, 您还没有登录, 所有商品价格,活动信息以登录后显示为准
+                        <button>立即登录</button>
+                    </div>
+                </div>
+                <table id="shopCar" class="f14">
+                    <!-- 总计 -->
+                    <tr>
+                        <th colspan="2" class="left">
+                            <label><input type="checkbox" class="allSel"> 全选</label>
+                            <label><input type="checkbox" class="outSel"> 反选</label>
+                            &emsp;<a href="javascript:void(0);" class="dbutton">删除</a>&emsp;&emsp;分享&emsp;&emsp;移入收藏夹&emsp;&emsp;消除失效宝贝
+                        </th>
+                        <th> </th>
+                        <th>
+                            已选商品<b><span class="cf60 numTotal">0</span></b>
+                        </th>
+                        <th width="210">
+                            合计(不含运费)
+                            <span class="priceTotal"><b>0.00</b></span>
+                        </th>
+                        <th>
+                            <button type="button">去结算</button>
+                        </th>
+                    </tr>
+                    <!-- 头部 -->
+                    <tr height="25">
+                        <td colspan="2" class="left">
+                            木果果木官方旗舰店 &emsp;<span> 联系店家</span> &emsp;<span>满2件包邮</span>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 内容 -->
+                    <tr>
+                        <td><input type="checkbox" class="singleSel"></td>
+                        <td class="flex" width="380">
+                            <img src="./img/shopcart.jpg" alt="">
+                            <p>木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫
+                                <br>
+                                <br>
+                                <br>
+                                <span class="new">新品</span>
+                                <span class="mail">包邮</span>
+                            </p>
+                        </td>
+                        <td width="130">颜色: 魅夜黑<br>
+                            尺寸: M</td>
+                        <td class="price f12" width="100">¥<b>169.00</b><br>VIP积分<b>100</b></td>
+                        <td>
+                            <span class="addNum">+</span>
+                            <input type="text" value="1" class="num">
+                            <span class="reNum">-</span>
+                        </td>
+                        <td width="100">
+                            移入收藏夹 <br>
+                            <a href="javascript:void(0);" class="dbutton">删除</a><br>
+                            分享 <br>
+                            相似宝贝
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="singleSel"></td>
+                        <td class="flex" width="380">
+                            <img src="./img/shopcart.jpg" alt="">
+                            <p>木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫
+                                <br>
+                                <br>
+                                <br>
+                                <span class="new">新品</span>
+                                <span class="mail">包邮</span>
+                            </p>
+                        </td>
+                        <td width="130">颜色: 魅夜黑<br>
+                            尺寸: M</td>
+                        <td class="price f12" width="100">¥<b>169.00</b><br>VIP积分<b>100</b></td>
+                        <td>
+                            <span class="addNum">+</span>
+                            <input type="text" value="1" class="num">
+                            <span class="reNum">-</span>
+                        </td>
+                        <td width="100">
+                            移入收藏夹 <br>
+                            <a href="javascript:void(0);" class="dbutton">删除</a><br>
+                            分享 <br>
+                            相似宝贝
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="singleSel"></td>
+                        <td class="flex" width="380">
+                            <img src="./img/shopcart.jpg" alt="">
+                            <p>木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫
+                                <br>
+                                <br>
+                                <br>
+                                <span class="new">新品</span>
+                                <span class="mail">包邮</span>
+                            </p>
+                        </td>
+                        <td width="130">颜色: 魅夜黑<br>
+                            尺寸: M</td>
+                        <td class="price f12" width="100">¥<b>169.00</b><br>VIP积分<b>100</b></td>
+                        <td>
+                            <span class="addNum">+</span>
+                            <input type="text" value="1" class="num">
+                            <span class="reNum">-</span>
+                        </td>
+                        <td width="100">
+                            移入收藏夹 <br>
+                            <a href="javascript:void(0);" class="dbutton">删除</a><br>
+                            分享 <br>
+                            相似宝贝
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="singleSel"></td>
+                        <td class="flex" width="380">
+                            <img src="./img/shopcart.jpg" alt="">
+                            <p>木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫
+                                <br>
+                                <br>
+                                <br>
+                                <span class="new">新品</span>
+                                <span class="mail">包邮</span>
+                            </p>
+                        </td>
+                        <td width="130">颜色: 魅夜黑<br>
+                            尺寸: M</td>
+                        <td class="price f12" width="100">¥<b>169.00</b><br>VIP积分<b>100</b></td>
+                        <td>
+                            <span class="addNum">+</span>
+                            <input type="text" value="1" class="num">
+                            <span class="reNum">-</span>
+                        </td>
+                        <td width="100">
+                            移入收藏夹 <br>
+                            <a href="javascript:void(0);" class="dbutton">删除</a><br>
+                            分享 <br>
+                            相似宝贝
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="singleSel"></td>
+                        <td class="flex" width="380">
+                            <img src="./img/shopcart.jpg" alt="">
+                            <p>木果果木2016秋装新品韩范简约宽松中长款纯棉长袖衬衫
+                                <br>
+                                <br>
+                                <br>
+                                <span class="new">新品</span>
+                                <span class="mail">包邮</span>
+                            </p>
+                        </td>
+                        <td width="130">颜色: 魅夜黑<br>
+                            尺寸: M</td>
+                        <td class="price f12" width="100">¥<b>169.00</b><br>VIP积分<b>100</b></td>
+                        <td>
+                            <span class="addNum">+</span>
+                            <input type="text" value="1" class="num">
+                            <span class="reNum">-</span>
+                        </td>
+                        <td width="100">
+                            移入收藏夹 <br>
+                            <a href="javascript:void(0);" class="dbutton">删除</a> <br>
+                            分享 <br>
+                            相似宝贝
+                        </td>
+                    </tr>
+                </table>
+                <div class="guess">
+                    <p class="f18">猜你喜欢</p>
+                    <div class="flexb f16">
+                        <div>
+                            <img src="./img/guess.jpg"/>
+                            <p>
+                                AIVEI秋新中长款牛仔
+                            </p>
+                            ¥ 79.00
+                        </div>
+                        <div>
+                            <img src="./img/guess.jpg"/>
+                            <p>
+                                AIVEI秋新中长款牛仔
+                            </p>
+                            ¥ 79.00
+                        </div>
+                        <div>
+                            <img src="./img/guess.jpg"/>
+                            <p>
+                                AIVEI秋新中长款牛仔
+                            </p>
+                            ¥ 79.00
+                        </div>
+                        <div>
+                            <img src="./img/guess.jpg"/>
+                            <p>
+                                AIVEI秋新中长款牛仔
+                            </p>
+                            ¥ 79.00
+                        </div>
+                        <div>
+                            <img src="./img/guess.jpg"/>
+                            <p>
+                                AIVEI秋新中长款牛仔
+                            </p>
+                            ¥ 79.00
+                        </div>
+                        <div>
+                            <img src="./img/guess.jpg"/>
+                            <p>
+                                AIVEI秋新中长款牛仔
+                            </p>
+                            ¥ 79.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <div id="footer">
+        <!--页脚服务 -->
+        <div class="footer-service">
+            <div class="container">
+                <!-- 上部图标 -->
+                <div class="top flex">
+                    <div class="flex">
+                        <img src="./img/CgQI0lWskgmADBnsAAAPZvcSh3E68900~1.jpg" />
+                        <div class="about flex">
+                            <span class="bold">正品保障</span>
+                            <span class="f14">正品行货 放心选购</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="./img/ChEbulWsk4iADa_aAAAM544hHN818600~1.jpg" />
+                        <div class="about flex">
+                            <span class="bold">满86包邮</span>
+                            <span class="f14">满86元 免运费</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="./img/CgQIz1WslI-Adao3AAAN5b_ut2I80100~1.jpg" />
+                        <div class="about flex">
+                            <span class="bold">售后无忧</span>
+                            <span class="f14"> 7天无理由退货</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="./img/ChEi11WsyiyALBbiAAAN9lEEK5M33200~1.jpg" />
+                        <div class="about flex">
+                            <span class="bold">准时送达</span>
+                            <span class="f14">收货时间由你做主</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 下部自定义列表 -->
+                <div class="bottom flex">
+                    <dl>
+                        <dt class="bold">新手入门</dt>
+                        <dd>购物流程</dd>
+                        <dd>会员制度</dd>
+                        <dd>订单查询</dd>
+                        <dd>服务协议及隐私说明</dd>
+                        <dd>网站地图</dd>
+                    </dl>
+                    <dl>
+                        <dt class="bold">网站地图</dt>
+                        <dd>货到付款</dd>
+                        <dd>网上支付</dd>
+                        <dd>礼品卡支付</dd>
+                        <dd>其它支付</dd>
+                    </dl>
+                    <dl>
+                        <dt class="bold">配送服务</dt>
+                        <dd>配送进度查询</dd>
+                        <dd>商品验货与签收</dd>
+                    </dl>
+                    <dl>
+                        <dt class="bold">相关规则</dt>
+                        <dd>平台规则</dd>
+                        <dd>退换货政策</dd>
+                        <dd>发票制度</dd>
+                        <dd>帮助中心</dd>
+                    </dl>
+                    <div class="code f14 bold">
+                        App更优惠
+                        <img src="./img/code.png" alt="">
+                    </div>
+                    <div class="code f14 bold">
+                        加微信查订单
+                        <img src="./img/code.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚项目 -->
+        <div class="footer-items">
+            <div class="container flex">
+                <p class="f12">
+                    沪ICP备XXXXXXXXX号|经营证照|互联网药品信息服务资格证(沪)-经营性-2017-0006|违法和不良信息举报电话：XXX-XXXXXXXX|沪B2-XXXXXXX|
+                    沪公网安备 XXXXXXXXX号|友情链接|出版物经营许可证|增值电信业务经营许可证
+                </p>
+                <div>
+                    <img src="./img/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg" alt="">
+                    <img src="./img/CgQCr1PQy1CAF7vaAABDexsiEYM24800.jpg" alt="">
+                    <img src="./img/f582260777c44b30.png" alt="">
+                    <img src="./img/ChEi2lh171KAJrGlAAALl_uZt0E75600.jpg" alt="">
+                    <img src="./img/CgQCrlPYTqCASlHXAAAd82JE0eA31000.png" alt="">
+                    <img src="./img/7b46518a9d74a1d6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 引入JQ -->
+    <script src="./JS/jquery.js"></script>
+    <!-- 引入模板JS -->
+    <script src="./JS/formwork.js"></script>
+    <!-- 引入当前页面JS -->
+    <script src="./JS/shopcart.js"></script>
+
+</body>
+
+</html>

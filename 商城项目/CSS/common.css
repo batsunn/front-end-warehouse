@@ -1,0 +1,112 @@
+/* 公用样式表 */
+@charset "utf-8";
+/* 版心 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 清除浮动 */
+.cf:after {
+    content: '';
+    clear: both;
+    height: 0;
+    display: block;
+    zoom: 1;
+}
+/* 居中 */
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+/* 左浮动 */
+.fl {
+    float: left;
+}
+/* 右浮动 */
+.fr {
+    float: right;
+}
+
+/* CSS组件 */
+/* 字体相关 */
+.f90{
+    color:#ff9c00!important;
+}
+.f18{
+    font-size: 18px;
+}
+.f14{
+    font-size: 14px;
+}
+.f16{
+    font-size: 16px;
+}
+.f12{
+    font-size: 12px;
+}
+.fff{
+    color: #fff;
+}
+.bold{
+    font-weight: bold;
+}
+.red{
+    color: red;
+}
+/* 背景相关 */
+.bfff{
+    background-color: #fff;
+}
+/* 定位 */
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+/* 字体间距 */
+.lsp{
+    letter-spacing: 2px;
+}
+/* 显示*/
+.inblock{
+    display: inline-block;
+}
+.block{
+    display:block;
+}
+/* 弹性布局 */
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flexb{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.flexa{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+ul {
+    list-style: none;
+}
+/* a{
+    text-decoration: none;
+}
+a:hover{
+    color:#ff9c00;
+} */
+body{
+    background-color: #f4f4f4;
+    min-width:1200px;
+    background-color: #f4f4f4;
+}
