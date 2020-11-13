@@ -136,13 +136,40 @@ window.setTimeout(() => {
 
 **4call，bind，apply**
 
+```javascript
+var user={
+    name:'小貂禅',
+    age:20
+}
+function fn(){
+    console.log(this)
+}
+fn()//window,window是调用者
+fn.call(user)
+//user={name:'小貂禅',age:20},this指向第一个参数，user为调用者，多用来改变函数中this的指向
+//apply和call的用法一致，不过后面的参数用数组形式表达
+//函数.call(调用者,参数1,参数2,...)=函数.apply(调用者,[参数1,参数2,...])
+```
+
 
 
 **5作为构造函数调用**
 
+```javascript
+function Student(name,age){
+    this.name=name;
+    this.age=age;
+    this.study(){
+        console.log(this.name+'正在学习')
+    }
+}
+const student=new Student('小貂禅',18)
+student.study()
+```
 
 
-**6.IIFE**
+
+**6.IIFE(自执行函数)**
 
 ```javascript
 ;(function() {//没有函数名
