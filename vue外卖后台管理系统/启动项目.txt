@@ -1,0 +1,4 @@
+1.sell-serve是服务器，sell-manage是项目
+2.在sell-serve中打开cmd，nodemon 或者nodemon start启动服务器
+3.在sell-manage中打开cmd,yarn 或者npm i ,将所有依赖的包下载
+4.输入yarn start启动项目
