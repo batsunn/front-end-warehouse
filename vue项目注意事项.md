@@ -583,3 +583,22 @@ $local.clear();
 location.reload();
 ```
 
+4.计算菜单导航
+
+```javascript
+//声明一个过滤菜单的函数
+function calcmenu(arr) {
+  return arr.filter((v) => {
+    if (v.visible) {
+      if (v.children && v.children.length > 0) {
+        v.children = calcmenu(v.children);
+      }
+      return true;
+    } else {
+      return false;
+    }
+  });
+}
+```
+
+5.在导航页面动态渲染导航
