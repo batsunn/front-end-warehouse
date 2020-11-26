@@ -1,0 +1,3 @@
+1.打开sell-serve，nodemon或者nodemon start启动服务器
+2.进入myapp,yarn start启动项目
+3.在浏览器127.0.0.1:3000访问项目
