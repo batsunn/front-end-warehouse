@@ -602,3 +602,33 @@ function calcmenu(arr) {
 ```
 
 5.在导航页面动态渲染导航
+
+```html
+ <template v-for="v in menu">
+      <!-- 一级菜单，没有children -->
+      <el-menu-item
+        v-if="!v.children || v.path === '/order'"
+        :index="v.path === '/order' ? '/order/list' : v.path"
+        :key="v.path"
+      >
+        <i class="iconfont" :class="v.meta.icon"></i>
+        <span slot="title">{{ v.meta.name }}</span>
+      </el-menu-item>
+      <!-- 二级菜单 -->
+      <el-submenu v-else :index="v.path" :key="v.path">
+        <template slot="title">
+          <i class="iconfont" :class="v.meta.icon"></i>
+          <span>{{ v.meta.name }}</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item
+            v-for="item in v.children"
+            :key="item.path"
+            :index="item.path"
+            >{{ item.meta.name }}</el-menu-item
+          >
+        </el-menu-item-group>
+      </el-submenu>
+    </template>
+```
+
