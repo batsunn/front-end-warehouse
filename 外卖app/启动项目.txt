@@ -1,0 +1,3 @@
+1.0进入sell-serve,cmd,nodemon启动该服务器
+2.0进入app，cmd，yarn下载依赖包
+3.0yarn serve启动项目
