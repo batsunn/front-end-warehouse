@@ -1,0 +1,12 @@
+1. 打开自己的vue项目 (没有node-modules需要安装)
+2. 再项目根目录新建vue.config.js    项目配置文件（防止打包后白屏）
+    配置publicPath
+           module.exports = {
+		publicPath: './'
+           }
+3. 运行yarn build打包
+4. 打开HBuilderX，新建项目，选择5+ （HTML5）项目
+5. 把dist内的所有目录复制，粘贴到新建的5+项目中（全部覆盖）,留下manifest.json文件
+6. 配置自己APP的图标，名字...   (manifest.json配置)
+7. 选中项目，点击发行，选中原生APP-云打包，进行云端打包
+8. 下载打包完成的apk文件，安装到手机上即可

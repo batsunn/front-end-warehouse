@@ -3,7 +3,7 @@ import axios from "axios";
 import qs from "qs";
 
 //设置baseurl
-axios.defaults.baseURL = "http://127.0.0.1:5000";
+axios.defaults.baseURL = "http://192.168.43.69:5000";
 
 //设置超时时间
 axios.defaults.timeout = 6000;
